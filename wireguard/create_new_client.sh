@@ -9,6 +9,8 @@ wg genkey | tee /etc/wireguard/client/priv$client_id.key | wg pubkey | tee /etc/
 client_priv_key=$(cat /etc/wireguard/client/priv$client_id.key)
 client_pub_key=$(cat /etc/wireguard/client/pub$client_id.key)
 
+server_pub_key=(cat /etc/wireguard/server_pub.key)
+
 echo "[Interface]
 PrivateKey = $client_priv_key
 Address = 10.0.0.$client_id/24
