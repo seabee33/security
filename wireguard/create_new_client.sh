@@ -22,4 +22,4 @@ AllowedIPs = 0.0.0.0/0
 
 " > /etc/wireguard/client/wg0-$client_id.conf
 
-wg set wg0 peer $client_pub_key allowed-ips 10.0.0.$client_id
+wg set wg0 peer $client_pub_key allowed-ips 10.0.0.$client_id/32
