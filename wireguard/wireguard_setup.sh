@@ -46,7 +46,7 @@ Address = 10.0.0.2/24
 
 [Peer]
 PublicKey = $server_pub_key
-Endpoint = home.conorbriggs.com.au:51820
+Endpoint = servername_or_ip:51820
 AllowedIPs = 0.0.0.0/0
 
 " > /etc/wireguard/client/wg0.conf
